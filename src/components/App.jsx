@@ -18,7 +18,7 @@ class App extends Component {
   handleSubmit = e => {
     e.preventDefault();
      this.setState(prevState => {      
-       contacts : prevState.contacts.push({
+         prevState.contacts.push({
          id: nanoid(),
          name: e.target.name.value,
          number: e.target.number.value
