@@ -54,6 +54,7 @@ render() {
           />
         </label> 
         <button
+        className={styles.btn}
         type="submit">        
           Add contact
         </button>

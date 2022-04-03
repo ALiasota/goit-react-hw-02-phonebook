@@ -5,3 +5,9 @@
 .btnDel {
   margin-left: 15px;
 }
+
+.btnDel:focus,
+.btnDel:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
