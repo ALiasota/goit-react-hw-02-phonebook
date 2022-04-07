@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import ContactForm from "./ContactForm";
 import Filter from "./Filter";
 import ContactsList from "./ContactsList";
-import './App.css';
+import styles from './App.module.css';
 
 class App extends Component {
   constructor() {
@@ -65,7 +65,7 @@ class App extends Component {
   render() {
     const visibleContacts = this.getVisibleContacts();
     return (
-      <div className="container">
+      <div className={styles.container}>
       <ContactForm onSubmit={this.handleSubmit}/>
       
         <Filter value={this.state.filter} onChange={this.onChangeFilter} />      
