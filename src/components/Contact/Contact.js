@@ -19,10 +19,10 @@ const Contact = ({contact, onDelete})=>{
 
 Contact.propTypes = {
     onDelete: propTypes.func.isRequired,
-    contact: propTypes.objectOf({
+    contact: propTypes.shape({
         name: propTypes.string,
         id: propTypes.string,
-        number: propTypes.number
+        number: propTypes.string
     }).isRequired
         
   }
